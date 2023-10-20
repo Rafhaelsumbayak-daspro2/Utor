@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/Fonts/Outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(/Fonts/Outfit/static/Outfit-Bold.ttf);
+}
+
+/* Nav Bar */
+nav {
+    background-color: #12486B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #F8B856;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav .logo {
+    margin-left: 10px;
+}
+
+nav .logo img { 
+    width: 90px;
+
+}
+
+nav .title {
+    font-family: 'Bold', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin-right: 450px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin-right: 10px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Regular', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 300ms;
+    border-bottom: 1px solid transparent;
+}
+
+nav u li a:hover{
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.Log_In {
+    font-family: 'Regular', sans-serif;
+    background-color: #12486B;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.Sign_Up {
+    font-family: 'Regular', sans-serif;
+    background-color: #ffffff;
+    border: none;
+    color: #12486B; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* content */
+main {
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.content-description {
+    flex: 1; /* Bagian deskripsi mengambil 1 bagian dari lebar total */
+    padding: 20px; /* Ruang di sekitar teks */
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.content-image img{
+    flex: 1; /* Bagian gambar mengambil 1 bagian dari lebar total */
+    padding: 20px; /* Ruang di sekitar gambar */
+    text-align: right; /* Pusatkan gambar di sebelah kanan */
+    width: 650px;
+    margin-right: 100px;
+}
+
+/* Gaya tambahan untuk teks dan tautan */
+.content-description h1 {
+    font-family: 'Regular', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-description p {
+    font-family: 'Regular', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-description a {
+    font-family: 'Regular', sans-serif;
+    background-color: #12486B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.content-description a :hover {
+    background-color: #0e2e44;
+}
+
+.centered-paragraph h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 170px;
+}
+
+.centered-paragraph {
+    font-family: 'Regular', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* footer */
+.footer {
+    font-family: 'Regular';
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 300px;
+}
